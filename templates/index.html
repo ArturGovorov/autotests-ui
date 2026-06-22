@@ -4,31 +4,75 @@
     <meta charset="UTF-8">
     <title>Harry Potter Page</title>
     <style>
+        h6 {
+            font-size: 15px
+        }
+
         .Boy {
             color: red
+        }
+
+        .Boy1 {
+            color: yellow
+        }
+
+        #Harry {
+            font-size: 50px
+        }
+
+        div.potter > a {
+            color: green
+        }
+
+        ul li {
+            color: green
+        }
+
+        input[type="text"] {
+            background-color: blue
+        }
+
+        input[type="text"]:hover {
+            background-color: green
+        }
+
+        a:hover {
+            color: red
+        }
+
+        li::marker {
+            color: red
+        }
+
+        ul > li:nth-child(2) {
+            color:blue
         }
     </style>
 </head>
 <body>
-<div>
+<div class="wizarding">
     <h1 id="Harry">Harry Potter</h1>
+    <h1>Harry Potter1</h1>
+    <h1>Harry1 Potter1</h1>
     <h2 class="Boy">The Boy Who Lived</h2>
-    <h6 class="Boy">Wizarding World</h6>
+    <h6 class="Boy Boy1">Wizarding World</h6>
     <p>
         Harry Potter is a young wizard who studies at
         <span style="color: green">Hogwarts</span> and fights dark magic.
     </p>
     <a href="https://www.wizardingworld.com/" target="_blank">Wizarding World</a>
     <img
-        alt="Harry Potter"
-        src="https://upload.wikimedia.org/wikipedia/en/d/d7/Harry_Potter_character_poster.jpg"
-        style="width: 300px"
+            alt="Harry Potter"
+            src="https://upload.wikimedia.org/wikipedia/en/d/d7/Harry_Potter_character_poster.jpg"
+            style="width: 300px"
     >
-    <ul>
-        <li>Harry Potter</li>
-        <li>Hermione Granger</li>
-        <li>Ron Weasley</li>
-    </ul>
+    <div>
+        <ul>
+            <li>Harry Potter</li>
+            <li>Hermione Granger</li>
+            <li>Ron Weasley</li>
+        </ul>
+    </div>
     <ol>
         <li>The Search for the Philosopher's Stone</li>
         <li>Learning Magic</li>
@@ -67,6 +111,22 @@
         </tr>
         </tbody>
     </table>
+    <div class="nth">
+        <p>1</p>
+        <p>2</p>
+        <h6>3</h6>
+        <h5>4</h5>
+        <p>5</p>
+    </div>
+</div>
+<div class="potter">
+    <h2 class="Boy">The Boy Who Lived</h2>
+    <a href="https://www.wizardingworld.com/" target="_blank">Potter World</a>
+    <ul>
+        <li>Harry Potter</li>
+        <li>Hermione Granger</li>
+        <li>Ron Weasley</li>
+    </ul>
 </div>
 </body>
 </html>
