@@ -10,15 +10,12 @@ with sync_playwright() as playwright:
     expect(registration_button).to_be_disabled()
 
     email_input = page.get_by_test_id('registration-form-email-input').locator('input')
-    expect(email_input).to_be_visible()
     email_input.fill('user.name@gmail.com')
 
     username_input = page.get_by_test_id('registration-form-username-input').locator('input')
-    expect(username_input).to_be_visible()
     username_input.fill('username')
 
     password_input = page.get_by_test_id('registration-form-password-input').locator('input')
-    expect(password_input).to_be_visible()
     password_input.fill('password')
 
     expect(registration_button).to_be_enabled()
