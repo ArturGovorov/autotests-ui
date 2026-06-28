@@ -13,6 +13,3 @@ with sync_playwright() as playwright:
         page.keyboard.press(character, delay=300)
 
     page.keyboard.press('ControlOrMeta+A')
-
-    page.wait_for_timeout(5000)
-

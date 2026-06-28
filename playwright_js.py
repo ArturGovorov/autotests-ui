@@ -19,5 +19,3 @@ with sync_playwright() as playwright:
         """,
         new_text
     )
-
-    page.wait_for_timeout(5000)
