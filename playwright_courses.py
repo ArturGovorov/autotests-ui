@@ -33,6 +33,7 @@ with sync_playwright() as playwright:
     expect(courses_title).to_have_text('Courses')
 
     block_icon = page.get_by_test_id('courses-list-empty-view-icon')
+    expect(block_icon).to_be_visible()
 
     result_block = page.get_by_test_id('courses-list-empty-view-title-text')
     expect(result_block).to_be_visible()
